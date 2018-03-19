@@ -6,18 +6,16 @@ body {
 }
 
 .page {
-    overflow-x: hidden;
-}
-
-.container-large {
-    max-width: 1400px;
-    margin: 0 auto;
+    overflow: hidden;
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1400px;
     padding: 0 100px;
     margin: 0 auto;
+    @media (max-width: @breakpoint-xsmall-max) {
+        padding: 0 20px;
+    }
 }
 
 .intro {
@@ -192,29 +190,40 @@ body {
 
 .home {
     padding-top: 10%;
-    background: linear-gradient(to bottom, #69b1d2 10%, #fff 90%);
+    background: linear-gradient(to bottom, #dbeffa 1%, #fff 90%);
 }
 
 .home__section-desc {
-    margin-bottom: 10%;
+    margin-bottom: 9%;
 }
 
 .home-tile {
     position: relative;
+    z-index: 2;
+    padding-bottom: 24%;
 }
 
 .home-tile__mark {
+    margin-left: 7.4%;
+    position: relative;
+    z-index: 3;
+    //width: 45%;
+    //position: absolute;
+    //top: 0%;
+    //left: 7.4%;
+    //z-index: 3;
+}
+
+.home-tile__title {
     display: inline-block;
-    margin-bottom: 25px;
-    padding: 15px 30px 15px 45px;
+    margin-bottom: 30px;
+    padding: 12px 32px 12px 40px;
     background-color: #129bc9;
     font-size: 48px;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
     line-height: 1;
     color: #fff;
     position: relative;
-    left: 7.4%;
-    z-index: 3;
     &::before {
         content: '';
         width: 1px;
@@ -238,9 +247,6 @@ body {
 }
 
 .home-tile__text {
-    position: relative;
-    left: 7.6%;
-    z-index: 3;
     margin-bottom: 76px;
     margin-left: 45px;
     font-size: 24px;
@@ -250,7 +256,8 @@ body {
 .home-tile__image {
     &-1 {
         width: 55%;
-        position: relative;
+        position: absolute;
+        top: 0;
         left: 6.5%;
     }
     &-2 {
@@ -282,5 +289,131 @@ body {
         position: absolute;
         top: 61%;
         left: 103.4%;
+    }
+}
+
+.home-layout {
+    position: relative;
+    z-index: 2;
+}
+
+.home-layout__news {
+    &-1 {
+        position: absolute;
+        z-index: 3;
+        width: 26%;
+        top: 24.9%;
+        left: 10.5%;
+    }
+    &-2 {
+        position: absolute;
+        z-index: 3;
+        width: 26%;
+        top: 30.14%;
+        left: 10.6%;
+    }
+    &-3 {
+        position: absolute;
+        z-index: 3;
+        width: 26%;
+        top: 35.7%;
+        left: 10.5%;
+    }
+    &-4 {
+        position: absolute;
+        z-index: 3;
+        width: 52%;
+        top: 24.8%;
+        left: 37%;
+    }
+    &-5 {
+        position: absolute;
+        z-index: 3;
+        width: 26%;
+        top: 32.85%;
+        left: 37%;
+    }
+    &-6 {
+        position: absolute;
+        z-index: 3;
+        width: 26%;
+        top: 32.85%;
+        left: 64%;
+    }
+}
+
+.home-layout__questionnaire {
+    &-title {
+        position: absolute;
+        z-index: 3;
+        width: 18%;
+        top: 55.1%;
+        left: 10.6%;
+    }
+    &-all {
+        position: absolute;
+        z-index: 3;
+        width: 10%;
+        top: 56.05%;
+        left: 10.6%;
+    }
+    &-1 {
+        position: absolute;
+        z-index: 3;
+        width: 25%;
+        top: 56.54%;
+        left: 10.6%;
+    }
+    &-2 {
+        position: absolute;
+        z-index: 3;
+        width: 25%;
+        top: 56.54%;
+        left: 37%;
+    }
+    &-3 {
+        position: absolute;
+        z-index: 3;
+        width: 25%;
+        top: 56.54%;
+        left: 64%;
+    }
+}
+
+.home-layout__video {
+    &-title {
+        position: absolute;
+        z-index: 3;
+        width: 18%;
+        top: 61.3%;
+        left: 10.6%;
+    }
+    &-all {
+        position: absolute;
+        z-index: 3;
+        width: 9.5%;
+        top: 62.2%;
+        left: 10.6%;
+    }
+    &-1 {
+        position: absolute;
+        z-index: 3;
+        width: 25%;
+        top: 62.65%;
+        left: 10.6%;
+    }
+    &-2 {
+        position: absolute;
+        z-index: 3;
+        width: 25%;
+        top: 62.65%;
+        left: 37%;
+    }
+    &-3 {
+        position: absolute;
+        z-index: 3;
+        width: 25%;
+        top: 62.65%;
+        left: 64%;
     }
 }
