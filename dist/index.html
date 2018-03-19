@@ -11,34 +11,31 @@
     <body>
         <div class="page">
             <section class="intro">
-                <div class="container">
-                    <div class="intro__section-desc section-desc">
-                        <div>
-                            Редизайн
-                        </div>
-                        <div>
-                            2017
-                        </div>
+                <div class="intro__section-desc section-desc">
+                    <div>
+                        Редизайн
                     </div>
-                    <div class="intro__content">
-                        <div class="intro__titles">
-                            <svg class="intro__overhead">
-                                <use xlink:href="../img/svg-sprite.svg#overhead"/>
-                            </svg>
-                            <svg class="intro__sitetitle">
-                                <use xlink:href="../img/svg-sprite.svg#title"/>
-                            </svg>
-                            <svg class="intro__subtitle">
-                                <use xlink:href="../img/svg-sprite.svg#subtitle"/>
-                            </svg>
-                        </div>
-                        <a href="#about" class="intro__btn">
-                            <svg>
-                                <use xlink:href="../img/svg-sprite.svg#further-arrow"/>
-                            </svg>
-                        </a>
+                    <div>
+                        2017
                     </div>
-
+                </div>
+                <div class="intro__content">
+                    <div class="intro__titles">
+                        <svg class="intro__overhead">
+                            <use xlink:href="../img/svg-sprite.svg#overhead"/>
+                        </svg>
+                        <svg class="intro__sitetitle">
+                            <use xlink:href="../img/svg-sprite.svg#title"/>
+                        </svg>
+                        <svg class="intro__subtitle">
+                            <use xlink:href="../img/svg-sprite.svg#subtitle"/>
+                        </svg>
+                    </div>
+                    <a href="#about" class="intro__btn">
+                        <svg>
+                            <use xlink:href="../img/svg-sprite.svg#further-arrow"/>
+                        </svg>
+                    </a>
                 </div>
             </section>
             <section class="about" id="about">
@@ -66,10 +63,10 @@
                             <p>Устаревший дизайн и неадаптивность давали о себе знать, на сайте стало меньше посетителей и выросло число отказов.</p>
                         </div>
                     </div>
-                    <div class="about__video">
-                        <video poster="../img/intro-bg.jpg" loop autoplay>
-                          <source src="../img/movie.mp4" type="video/mp4">
-                          <source src="../img/movie.ogg" type="video/ogg">
+                    <div class="about__video-wrapper">
+                        <video class="about__video" poster="../img/intro-bg.jpg" loop muted controls>
+                          <source src="../img/big_buck_bunny.mp4" type="video/mp4">
+                          <source src="../img/big_buck_bunny.ogg" type="video/ogg">
                           Your browser does not support the video tag.
                         </video>
                     </div>
@@ -94,14 +91,7 @@
                         </div>
                     </div>
                     <div class="home-tile">
-                        <div class="home-tile__mark">
-                            <div class="home-tile__title">
-                                Плиточное отображение
-                            </div>
-                            <div class="home-tile__text">
-                                В основе нового дизайна сайта
-                            </div>
-                        </div>
+                        <img src="img/tile-mark.png?fa9cca76f50389f98098b4e86e94f650" class="home-tile__mark" alt="" />
                         <img src="img/tile-1.png?5f1b9675d17ed2b64b7c15b3b6f6fba5" class="home-tile__image-1" alt="" />
                         <img src="img/tile-2.png?97ee7918e150496b9bf92be4a18971ea" class="home-tile__image-2" alt="" />
                         <img src="img/tile-3.png?2845bed37d8a56c3e0c80e84bf5428c3" class="home-tile__image-3" alt="" />
@@ -111,6 +101,7 @@
                     </div>
                     <div class="home-layout">
                         <img src="img/home-layout.jpg?e7cac6cffb30d67bbcd1fe239f3238db" alt="" />
+                        <img src="img/news-title.jpg?693a0b9b99ebdaf34a4e91af8bc61875" class="home-layout__news-title" alt="" />
                         <img src="img/news-1.jpg?25feb4a9d330bfea9da06bc68c29e9fd" class="home-layout__news-1" alt="" />
                         <img src="img/news-2.jpg?d799def7001c739ef1909320751f293d" class="home-layout__news-2" alt="" />
                         <img src="img/news-3.jpg?eef6b4fcb63663dd940365a9659c2369" class="home-layout__news-3" alt="" />
@@ -127,27 +118,25 @@
                         <img src="img/video-1.jpg?b5025aa54f49d77d2f235af57a7c9fd2" class="home-layout__video-1" alt="" />
                         <img src="img/video-2.jpg?a652cb5aa1000e97f18b3cdfa4fa7ec7" class="home-layout__video-2" alt="" />
                         <img src="img/video-3.jpg?3c8e17e717de6fe007688a6d53472e1c" class="home-layout__video-3" alt="" />
+                        <div class="home__basics"></div>
                     </div>
                 </div>
             </section>
-
-
-
-            <a href="http://domenart-studio.ru/" class="studio">
-                <img src="img/domenart.png?9d1783ccd880c90aa2feacd6827d2d6f" alt="">
-            </a>
-            <a href="#" class="prev">
-                <span>←</span>предыдущий проект
-            </a>
-            <a href="#" class="next">
-                следующий проект<span>→</span>
-            </a>
-            <a href="#" class="back">
-                <svg class="back__arrow">
-                    <use xlink:href="../img/svg-sprite.svg#back-arrow"/>
-                </svg>
-            </a>
         </div>
+        <a href="http://domenart-studio.ru/" class="studio">
+            <img src="img/domenart.png?9d1783ccd880c90aa2feacd6827d2d6f" alt="">
+        </a>
+        <a href="#" class="prev">
+            <span>←</span>предыдущий проект
+        </a>
+        <a href="#" class="next">
+            следующий проект<span>→</span>
+        </a>
+        <a href="#" class="back">
+            <svg class="back__arrow">
+                <use xlink:href="../img/svg-sprite.svg#back-arrow"/>
+            </svg>
+        </a>
      <script type="text/javascript" src="bundle.js"></script>
     </body>
 </html>
