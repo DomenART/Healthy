@@ -384,8 +384,8 @@ body {
     &-1 {
         position: absolute;
         z-index: 3;
-        width: 24%;
-        top: 24.9%;
+        width: 25.2%;
+        top: 24.95%;
         left: 10.5%;
     }
     &-2 {
@@ -794,7 +794,7 @@ body {
 }
 
 .dynamic__section-desc {
-    padding: 16% 0 6.5%;
+    padding: 16% 0 6.1%;
     font-size: 13px;
     color: #fff;
     span {
@@ -806,7 +806,7 @@ body {
 }
 
 .dynamic__laptop {
-    margin-left: 25%;
+    margin-left: 35%;
     width: 54.5%;
     padding-top: 38.5%;
     background: url('../img/dynamic-laptop.png') 50% 50% no-repeat;
@@ -817,13 +817,12 @@ body {
 .dynamic__laptop-screen {
     width: 82%;
     box-sizing: border-box;
-    padding: 4.5% 2.5% 2% 2.8%;
+    padding: 4.4% 2.5% 4.8% 3.2%;
     position: absolute;
     top: 10%;
     left: 8.8%;
     background: url('../img/laptop-bg.jpg') 50% 50% no-repeat;
     background-size: 100% 100%;
-    //padding-top: 59.5%;
 }
 
 .dynamic__heading {
@@ -850,32 +849,239 @@ body {
     letter-spacing: 1.2px;
 }
 
+.dynamic__content {
+    display: flex;
+}
+
 .dynamic__article {
-    width: 30%;
-    margin-right: 5%;
+    &:nth-child(1) {
+        width: 32.3%;
+        margin-right: 2%;
+    }
+    &:nth-child(2) {
+        width: 31%;
+        margin-right: 2.8%;
+    }
+    &:nth-child(3) {
+        width: 32%;
+        margin-right: 0;
+    }
 }
 
 .dynamic__article-date {
     margin-bottom: 6.5%;
     color: #999999;
     font-family: @font-secondary;
-    font-size: 0.5vw;
+    font-size: 0.4vw;
     line-height: 1;
-    letter-spacing: 0.6px;
+    letter-spacing: 0.06vw;
 }
 
 .dynamic__article-title {
+    margin-bottom: 5.5%;
     font-family: @font-decor;
     color: #669933;
-    font-size: 2vw;
-    line-height: 1;
-    letter-spacing: -0.2px;
+    font-size: 0.89vw;
+    line-height: 1.1;
+    letter-spacing: 0.05vw;
 }
 
 .dynamic__article-text {
+    margin-bottom: 9%;
     color: #333333;
     font-size: 0.7vw;
     font-weight: 300;
     line-height: 1.2;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.01vw;
+}
+
+.dynamic__article-image {
+    position: relative;
+    cursor: pointer;
+    &:hover {
+        .dynamic__article-hover {
+            opacity: 1;
+            transition: opacity 0.5s;
+        }
+    }
+}
+
+.dynamic__article-image_first {
+    padding-top: 95%;
+    background: url('../img/laptop-article-1.jpg') 50% 50% no-repeat;
+    background-size: cover;
+}
+
+.dynamic__article-hover {
+    opacity: 0;
+    padding: 8%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(76, 85, 94, 0.7);
+    transition: opacity 0.5s;
+}
+
+.dynamic__article-hover_second {
+    .dynamic__article-date,
+    .dynamic__article-title,
+    .dynamic__article-text {
+        color: #fff;
+    }
+}
+
+.dynamic__article-image_second {
+    padding-top: 173%;
+    background: url('../img/laptop-article-2.jpg') 50% 50% no-repeat;
+    background-size: cover;
+}
+
+.dynamic__article-image_third {
+    margin-bottom: 8%;
+    padding-top: 105%;
+    background: url('../img/laptop-article-3.jpg') 50% 50% no-repeat;
+    background-size: cover;
+}
+
+.dynamic__article-hover_third {
+    display: flex;
+    align-items: flex-end;
+}
+
+.dynamic__article-date_third {
+    margin-bottom: 5.3%;
+}
+
+.dynamic__article-title_third {
+    margin-bottom: 2.5%;
+}
+
+.dynamic__mark {
+    position: absolute;
+    top: 25%;
+    left: -24.4%;
+}
+
+.dynamic__mark-title {
+    display: inline-block;
+    margin-bottom: 10%;
+    padding: 4% 15% 4% 12%;
+    background-color: #129bc9;
+    color: #ffffff;
+    font-size: 2.3vw;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: 0.01vw;
+    z-index: 2;
+}
+
+.dynamic__mark-text {
+    margin-left: 14%;
+    color: #ffffff;
+    font-size: 1.15vw;
+    font-weight: 300;
+    letter-spacing: -0.01vw;
+}
+
+.dynamic__mark-thread {
+    z-index: 1;
+    &_first {
+        width: 231%;
+        height: 30%;
+        position: absolute;
+        top: -12%;
+        left: 94%;
+        border-top: 1px dashed #129bc9;
+        border-right: 1px dashed #129bc9;
+        border-left: 1px dashed #129bc9;
+    }
+    &_second {
+        width: 131%;
+        height: 1px;
+        position: absolute;
+        top: 18%;
+        left: 100%;
+        border-top: 1px dashed #129bc9;
+    }
+    &_third {
+        width: 45%;
+        height: 79%;
+        position: absolute;
+        top: 30%;
+        left: 94%;
+        border-bottom: 1px dashed #129bc9;
+        border-left: 1px dashed #129bc9;
+    }
+}
+
+.dynamic__mark-dot {
+    width: 1vw;
+    height: 1vw;
+    position: absolute;
+    background-color: #129bc9;
+    border-radius: 50%;
+    &_first {
+        top: 85%;
+        left: 98.5%;
+    }
+    &_second {
+        left: 98.5%;
+        top: -1000%;
+    }
+    &_third {
+        top: 95%;
+        left: 95%;
+    }
+}
+
+.fonts__section-desc {
+    padding: 15.5% 0 20.5%;
+}
+
+.fonts__content {
+    margin: 0 10%;
+}
+
+.fonts__titles {
+    display: flex;
+    margin-bottom: 10%;
+
+}
+
+.fonts__comfortaa {
+    margin-right: 23%;
+    position: relative;
+}
+
+.fonts__comfortaa-name  {
+    width: 25vw;
+}
+
+.fonts__comfortaa-bg  {
+    width: 25vw;
+    position: absolute;
+    top: -5%;
+    left: -5%;
+}
+
+.fonts__lato {
+    position: relative;
+}
+
+.fonts__lato-name  {
+    width: 9vw;
+}
+
+.fonts__lato-bg  {
+    width: 9vw;
+    position: absolute;
+    top: -5%;
+    left: -5%;
+}
+
+.fonts__letters {
+    margin-bottom: 10%;
 }
