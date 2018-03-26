@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X7 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="34.4828mm" height="72.441mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 3448 7244"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil2 {fill:#FEFEFE}
+    .fil0 {fill:#FEFEFE;fill-rule:nonzero}
+    .fil1 {fill:#FEFEFE;fill-opacity:0.501961}
+   ]]>
+  </style>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_436949312">
+   <path class="fil0" d="M537 34l2394 0c142,0 271,58 365,152 94,93 152,223 152,365l0 6175c0,143 -58,272 -152,366 -94,94 -223,152 -365,152l-2394 0c-142,0 -272,-58 -365,-152 -94,-94 -152,-223 -152,-366l0 -6175c0,-142 58,-272 152,-365 93,-94 223,-152 365,-152zm2394 75l-2394 0c-121,0 -232,49 -312,130 -81,80 -130,191 -130,312l0 6175c0,122 49,233 130,313 80,80 191,130 312,130l2394 0c121,0 232,-50 312,-130 80,-80 130,-191 130,-313l0 -6175c0,-121 -50,-232 -130,-312 -80,-81 -191,-130 -312,-130z"/>
+   <polygon class="fil1" points="250,1034 3200,1034 3200,4037 250,4037 "/>
+   <polygon class="fil1" points="250,6272 3200,6272 3200,4480 250,4480 "/>
+   <circle class="fil2" cx="1731" cy="6735" r="311"/>
+   <rect class="fil2" x="2323" width="555.62" height="81.03"/>
+   <rect class="fil2" y="1054" width="71.93" height="296.01"/>
+   <rect class="fil2" y="1682" width="71.93" height="296.01"/>
+   <rect class="fil2" y="2275" width="71.93" height="296.01"/>
+   <rect class="fil2" x="1478" y="630" width="540.74" height="67.8"/>
+   <ellipse class="fil2" cx="1742" cy="394" rx="54" ry="53"/>
+  </g>
+ </g>
+</svg>
