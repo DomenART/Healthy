@@ -8,7 +8,13 @@
   font-family: 'Lato';
   src: url(fonts/Lato-Bold.ttf?eb9532033c2adf99b1314611b5e9cd0e) format('truetype');
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url(fonts/Lato-Black.ttf?1233fdf19c04333c7f58af4eb8698452) format('truetype');
+  font-style: normal;
+  font-weight: 900;
 }
 @font-face {
   font-family: 'Roboto';
@@ -94,7 +100,7 @@ body {
   font-size: 16px;
   letter-spacing: 0px;
   color: #727c83;
-  font-weight: bold;
+  font-weight: 700;
 }
 .intro__titles {
   display: -webkit-box;
@@ -262,7 +268,7 @@ body {
   letter-spacing: 2px;
   line-height: 1;
   color: #1d8cbd;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
   position: relative;
 }
@@ -1440,7 +1446,7 @@ body {
   background-color: #aecfe4;
 }
 .adaptability__section-desc {
-  padding: 15.7% 0 13.3%;
+  padding: 15.7% 0 13.5%;
 }
 .adaptability__title {
   margin-bottom: 5.9%;
@@ -1455,32 +1461,194 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  width: 70%;
-  margin-left: 13%;
-  margin-bottom: 10%;
+  width: 75%;
+  margin: 0 auto 3.8%;
 }
 .adaptability__desktop {
-  width: 45%;
+  width: 42%;
   margin-right: 10%;
 }
 .adaptability__laptop {
-  width: 23.8%;
-  margin-right: 15%;
+  width: 22%;
+  margin-right: 13.5%;
 }
 .adaptability__mobile {
-  width: 10%;
+  width: 9.5%;
 }
 .adaptability__text {
-  padding-bottom: 5%;
+  margin-bottom: 18%;
   text-align: center;
   font-size: 24px;
   font-weight: 300;
+}
+.adaptability__device-size {
+  margin-top: 43px;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  line-height: 1;
+}
+.adaptability__count {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  color: #333333;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.adaptability__count span {
+  display: inline-block;
+  margin: 0 10px 0 14px;
+  -webkit-transform: translateY(70px);
+          transform: translateY(70px);
+  color: #ffffff;
+  font-size: 231px;
+  font-weight: 900;
+  letter-spacing: -0.18px;
+}
+.adaptability__pool {
+  position: relative;
+  padding-top: 307%;
+}
+.adaptability__layout-1 {
+  width: 50%;
+  position: absolute;
+  top: -17%;
+  left: -44.6%;
+}
+.adaptability__layout-2 {
+  width: 55.5%;
+  position: absolute;
+  top: -3.9%;
+  left: -30%;
+}
+.adaptability__layout-3 {
+  width: 55.4%;
+  position: absolute;
+  top: 9.8%;
+  left: -10.7%;
+}
+.adaptability__layout-4 {
+  width: 82%;
+  position: absolute;
+  top: -2.9%;
+  left: 48%;
+}
+.adaptability__layout-5 {
+  width: 89.7%;
+  position: absolute;
+  top: 7.2%;
+  left: 29%;
+}
+.adaptability__layout-6 {
+  position: absolute;
+  width: 51%;
+  left: 67.3%;
+  top: 14.3%;
+}
+.adaptability__layout-7 {
+  position: absolute;
+  width: 55.6%;
+  top: 23.5%;
+  left: 8.8%;
+}
+.adaptability__layout-8 {
+  position: absolute;
+  width: 115%;
+  min-width: 114.5%;
+  top: 29.5%;
+  left: -49.9%;
+}
+.adaptability__layout-9 {
+  position: absolute;
+  width: 33%;
+  top: 27.6%;
+  left: 81.2%;
+}
+.adaptability__layout-10 {
+  position: absolute;
+  width: 55.6%;
+  top: 37.2%;
+  left: 27.9%;
+}
+.adaptability__layout-11 {
+  position: absolute;
+  width: 56.5%;
+  top: 50.8%;
+  left: 47.5%;
+}
+.adaptability__layout-12 {
+  position: absolute;
+  width: 55.6%;
+  top: 65%;
+  left: 67.8%;
+}
+.adaptability__layout-13 {
+  position: absolute;
+  width: 56%;
+  left: 28.3%;
+  top: 70.9%;
+}
+.adaptability__layout-14 {
+  position: absolute;
+  width: 33%;
+  top: 77%;
+  left: 9.5%;
+}
+.adaptability__layout-15 {
+  position: absolute;
+  width: 60%;
+  top: 79.8%;
+  left: -30.5%;
+}
+.adaptability__layout-16 {
+  position: absolute;
+  width: 28%;
+  top: 89.3%;
+  left: 27%;
+}
+.adaptability__layout-17 {
+  position: absolute;
+  width: 56.8%;
+  top: 78.5%;
+  left: 87%;
+}
+.adaptability__layout-18 {
+  position: absolute;
+  width: 58.5%;
+  top: 84.6%;
+  left: 47%;
+}
+.adaptability__layout-19 {
+  position: absolute;
+  width: 25%;
+  top: 96%;
+  left: 14%;
+}
+.ending {
+  position: relative;
+  z-index: 3;
+  padding-top: 75%;
+  background-color: #fff;
+  -webkit-box-shadow: 0px -220px 100px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px -220px 100px 20px rgba(0, 0, 0, 0.1);
+}
+.ending__iphone {
+  width: 35%;
+  position: absolute;
+  top: -24%;
+  left: 43.5%;
+}
+.ending__macbook {
+  width: 35%;
+  position: absolute;
+  top: 80%;
+  left: 20%;
 }
 /* ========================================================================
    Component: Base
