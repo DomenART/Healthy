@@ -70,11 +70,13 @@ body {
 
 .intro__sitetitle {
     width: 786px;
-    max-width: 90%;
     height: 117px;
     margin-top: 6.5%;
     margin-bottom: 10.5%;
     fill: #5d6460;
+    @media (max-width: @breakpoint-medium-max) {
+        max-width: 90%;
+    }
 }
 
 .intro__subtitle {
@@ -249,22 +251,16 @@ body {
     padding-bottom: 39.5%;
 }
 
-/*
-.home-tile__mark {
-    position: absolute;
-    z-index: 3;
-    width: 46%;
-    top: -18%;
-    left: 7.3%;
-}
-*/
-
 .home-tile__mark {
     position: absolute;
     z-index: 3;
     width: 46%;
     top: 1.1%;
     left: 7.3%;
+    @media (max-width: @breakpoint-xsmall-max) {
+        top: -15%;
+        left: 5%;
+    }
 }
 
 .home-tile__title {
@@ -275,6 +271,11 @@ body {
     font-weight: 300;
     line-height: 1;
     letter-spacing: 1.4px;
+    position: relative;
+    z-index: 2;
+    @media (max-width: @breakpoint-xsmall-max) {
+        font-size: 4.49vw;
+    }
 }
 
 .home-tile__text {
@@ -283,6 +284,9 @@ body {
     font-size: 1.13vw;
     font-weight: 300;
     white-space: nowrap;
+    @media (max-width: @breakpoint-xsmall-max) {
+        font-size: 2.5vw;
+    }
 }
 
 .home-tile__thread {
@@ -291,16 +295,18 @@ body {
     left: 5%;
     padding-top: 31%;
     border-right: 1px dashed #2589aa;
+    @media (max-width: @breakpoint-xsmall-max) {
+        padding-top: 38%
+    }
 }
 
 .home-tile__dot {
-    margin-top: 31%;
-    position: absolute;
-    left: 3.5%;
-    width: 3%;
-    height: 15%;
+    width: 1vw;
+    height: 1vw;
     background-color: #2589aa;
     border-radius: 50%;
+    position: absolute;
+    transform: translateX(-50%);
 }
 
 .home-tile__image {
@@ -1419,6 +1425,9 @@ body {
     text-align: center;
     font-size: 24px;
     font-weight: 300;
+    @media (max-width: @breakpoint-xsmall-max) {
+        font-size: 20px;
+    }
 }
 
 .adaptability__device-size {
@@ -1429,6 +1438,7 @@ body {
     color: #fff;
     font-size: 20px;
     line-height: 1;
+    white-space: nowrap;
 }
 
 .adaptability__count {
@@ -1446,6 +1456,14 @@ body {
         font-size: 231px;
         font-weight: 900;
         letter-spacing: -0.18px;
+    }
+    @media (max-width: @breakpoint-small-max) {
+        font-size: 20px;
+        span {
+            margin: 0;
+            font-size: 100px;
+            transform: translateY(30px);
+        }
     }
 }
 
@@ -1574,22 +1592,226 @@ body {
 
 .ending {
     position: relative;
-    z-index: 3;
-    padding-top: 75%;
+    z-index: 2;
     background-color: #fff;
     box-shadow: 0px -220px 100px 20px rgba(0,0,0,0.1)
 }
 
 .ending__iphone {
-    width: 35%;
+    width: 32.05%;
     position: absolute;
-    top: -24%;
-    left: 43.5%;
+    top: -13%;
+    left: 40%;
 }
 
-.ending__macbook{
-    width: 35%;
+.ending__macbook {
+    width: 130%;
+    min-width: 130%;
     position: absolute;
-    top: 80%;
-    left: 20%;
+    top: 60.5%;
+    left: -14%;
+}
+
+.ending__fruit {
+    &-1 {
+        width: 9%;
+        position: absolute;
+        top: 30%;
+        left: 67%;
+    }
+    &-2 {
+        width: 7%;
+        position: absolute;
+        top: 57.5%;
+        left: 52%;
+    }
+    &-3 {
+        position: absolute;
+        width: 5%;
+        top: 91%;
+        left: 59.5%;
+    }
+    &-4 {
+        position: absolute;
+        width: 5%;
+        left: 66%;
+        top: 95.5%;
+    }
+    &-5 {
+        position: absolute;
+        width: 4%;
+        top: 93%;
+        left: 76.4%;
+    }
+    &-6 {
+        position: absolute;
+        width: 18%;
+        top: 96.8%;
+        left: 47.7%;
+    }
+    &-7 {
+        position: absolute;
+        width: 5%;
+        top: 102%;
+        left: 73%;
+    }
+    &-8 {
+        position: absolute;
+        width: 12%;
+        top: 113%;
+        left: 79%;
+    }
+    &-9 {
+        position: absolute;
+        width: 5%;
+        top: 110%;
+        left: 80%;
+    }
+}
+
+.ending__content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.ending__substrate-left {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(41, 49, 73, 0.7);
+}
+
+.ending__substrate-right {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    background-color: rgba(18, 155, 201, 0.7);
+}
+
+.ending__btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 31.6%;
+    margin-bottom: 8.5%;
+    position: relative;
+}
+
+.ending__btn-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 66px;
+    height: 66px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.ending__btn-text {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1;
+}
+
+.ending__text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10%;
+    position: relative;
+    z-index: 3;
+}
+
+.ending__thank {
+    max-width: 90%;
+    margin-bottom: 4.7%;
+    position: relative;
+}
+
+.ending__attention {
+    max-width: 50%;
+    margin-bottom: 25%;
+    position: relative;
+}
+
+.ending__attention-left-border {
+    position: absolute;
+    top: 50%;
+    left: -34.5%;
+    width: 28%;
+    height: 3px;
+    background-color: #fff;
+}
+
+.ending__attention-right-border {
+    position: absolute;
+    top: 50%;
+    right: -34.5%;
+    width: 28%;
+    height: 3px;
+    background-color: #fff;
+}
+
+.to-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    position: fixed;
+    top: 75%;
+    left: 95%;
+    background-color: rgba(27%, 30%, 33%, 0.5);
+    color: #fff;
+    font-size: 11px;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 0.11px;
+    transition: background-color 0.25s;
+    &:hover {
+        color: #fff;
+        text-decoration: none;
+        background-color: rgba(27%, 30%, 33%, 1);
+        transition: background-color 0.25s;
+        .to-top__arrow {
+            transform: translateY(-2px);
+            transition: transform 0.25s;
+        }
+    }
+}
+
+.to-top__arrow {
+    width: 7px;
+    height: 13px;
+    margin-bottom: 5px;
+    fill: #fff;
+    transition: transform 0.25s;
+}
+
+.back__arrow {
+    width: 30px;
+    height: 11px;
+    fill: #fff;
+    position: absolute;
+    top: 20%;
+    left: 60%;
+    transform: rotate(-45deg);
+    transform-origin: 50% 50%;
 }

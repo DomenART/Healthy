@@ -21,17 +21,11 @@
                 </div>
                 <div class="intro__content">
                     <div class="intro__titles">
-                        <svg class="intro__overhead">
-                            <use xlink:href="../img/svg-sprite.svg#overhead"/>
-                        </svg>
-                        <svg class="intro__sitetitle">
-                            <use xlink:href="../img/svg-sprite.svg#title"/>
-                        </svg>
-                        <svg class="intro__subtitle">
-                            <use xlink:href="../img/svg-sprite.svg#subtitle"/>
-                        </svg>
+                        <img class="intro__overhead" src="img/site-overhead.svg?2fa8dc564581b0bd1f2da922380ae04a" alt="">
+                        <img class="intro__sitetitle" src="img/site-title.svg?495efff56db7d088776bd4940ba6a63e" alt="">
+                        <img class="intro__subtitle" src="img/site-subtitle.svg?f52ae0e875b2fcbff0ebd08ef3367a66" alt="">
                     </div>
-                    <a href="#about" class="intro__btn">
+                    <a href="#about" class="intro__btn" uk-scroll>
                         <svg>
                             <use xlink:href="../img/svg-sprite.svg#further-arrow"/>
                         </svg>
@@ -95,8 +89,9 @@
                             <div class="home-tile__title">
                                 Плиточное отображение
                             </div>
-                            <div class="home-tile__thread"></div>
-                            <div class="home-tile__dot"></div>
+                            <div class="home-tile__thread">
+                                <div class="home-tile__dot"></div>
+                            </div>
                             <div class="home-tile__text">
                                 В основе нового дизайна сайта
                             </div>
@@ -470,6 +465,36 @@
             <div class="ending">
                 <img class="ending__iphone" src="img/iphone.png?8eb9a943dd30ab9ab232693bd71db9b8" alt="" />
                 <img class="ending__macbook" src="img/macbook.png?6b4deb062caf655b1730f2e09a275457" alt="" />
+                <img class="ending__fruit-1" src="img/ending-fruit-1.png?37c99b21c2b8b4a04039177281e54c23" alt="" />
+                <img class="ending__fruit-2" src="img/ending-fruit-2.png?4b683e6332254b5eb8e22c0c38603d33" alt="" />
+                <img class="ending__fruit-3" src="img/ending-fruit-3.png?a55c02b9e6b07f379a44df5a2c6fbc4d" alt="" />
+                <img class="ending__fruit-4" src="img/ending-fruit-4.png?07d663e8fa26c3eb4d31cfb6cb3c323e" alt="" />
+                <img class="ending__fruit-5" src="img/ending-fruit-5.png?edc46306d374d16fd0309c57e37b6312" alt="" />
+                <img class="ending__fruit-6" src="img/ending-fruit-6.png?5ff5bcf400e21327019b07e5d744253c" alt="" />
+                <img class="ending__fruit-7" src="img/ending-fruit-7.png?c6c6c537cd9e7668ea7529d5e47d3745" alt="" />
+                <img class="ending__fruit-8" src="img/ending-fruit-8.png?0eb04d6b5b29f5e8c7fdf086a6c8ebd1" alt="" />
+                <img class="ending__fruit-9" src="img/ending-fruit-9.png?477e1e54794a5cc46dc5b65f0daa69b3" alt="" />
+                    <div class="ending__content">
+                        <div class="ending__substrate-left"></div>
+                        <div class="ending__substrate-right"></div>
+
+                            <div class="ending__btn">
+                                <a class="ending__btn-icon" href="#" uk-scroll>
+                                    <img src="img/arrow-up.svg?c09299dedbffe8c8406b5c5b9746dcbf" alt="">
+                                </a>
+                                <span class="ending__btn-text">смотреть ещё раз</span>
+                            </div>
+                            <div class="ending__thank">
+                                <img src="img/thank-you.svg?7f1e4ce73d07ad796c8ee5d9215e5f87" alt="">
+                            </div>
+                            <div class="ending__attention">
+                                <img src="img/for-attention.svg?7f13145218abce5ae27b25cb1689238a" alt="">
+                                <div class="ending__attention-left-border"></div>
+                                <div class="ending__attention-right-border"></div>
+                            </div>
+
+                    </div>
+                </div>
             </div>
         </div>
         <a href="http://domenart-studio.ru/" class="studio">
@@ -485,6 +510,12 @@
             <svg class="back__arrow">
                 <use xlink:href="../img/svg-sprite.svg#back-arrow"/>
             </svg>
+        </a>
+        <a class="to-top" href="#" uk-scroll>
+            <svg class="to-top__arrow">
+                <use xlink:href="../img/svg-sprite.svg#arrow"/>
+            </svg>
+            Наверх
         </a>
      <script type="text/javascript" src="bundle.js"></script>
     </body>
