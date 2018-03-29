@@ -11,8 +11,8 @@ body {
 
 .container {
     max-width: 1400px;
-    padding: 0 100px;
     margin: 0 auto;
+    padding: 0 100px;
     @media (max-width: @breakpoint-xsmall-max) {
         padding: 0 10px;
     }
@@ -26,11 +26,15 @@ body {
 }
 
 .intro__section-desc {
-    max-width: 1380px;
+    max-width: 1400px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 100px;
     position: relative;
-    top: 7.6%;
+    top: 11%;
+    opacity: 0;
+    @media (max-width: @breakpoint-xsmall-max) {
+        padding: 0 10px;
+    }
 }
 
 .intro__content {
@@ -59,34 +63,38 @@ body {
     position: relative;
     margin-top: 14.4%;
     margin-bottom: 4.5%;
+    @media (max-width: @breakpoint-medium-max) {
+        margin-bottom: 20%;
+    }
 }
 
 .intro__overhead {
     width: 240px;
-    height: 18px;
-    fill: #727c83;
-    margin-bottom: 5.5%;
+    margin-bottom: 90px;
+    opacity: 0;
+    @media (max-width: @breakpoint-xsmall-max) {
+        margin-bottom: 20px;
+    }
 }
 
 .intro__sitetitle {
     width: 786px;
-    height: 117px;
-    margin-top: 6.5%;
-    margin-bottom: 10.5%;
-    fill: #5d6460;
     @media (max-width: @breakpoint-medium-max) {
         max-width: 90%;
     }
 }
 
 .intro__subtitle {
-    width: 355px;
+    align-self: flex-end;
+    width: 365px;
     max-width: 50%;
-    height: 22px;
-    fill: #868787;
-    position: absolute;
-    bottom: 24%;
-    right: 1.6%;
+    position: relative;
+    top: -15px;
+    left: -8px;
+    transform: scale(0);
+    @media (max-width: @breakpoint-xsmall-max) {
+        top: 0;
+    }
 }
 
 .intro__btn {
@@ -95,15 +103,36 @@ body {
     justify-content: center;
     width: 67px;
     height: 67px;
+    min-width: 67px;
+    min-height: 67px;
     margin: 0 auto 5%;
-    border: 2px solid #ffffff;
+    border: 2px solid #fff;
     border-radius: 50%;
     background-color: transparent;
     cursor: pointer;
-    svg {
+    transition: border-color 0.25s, background-color 0.25s;
+    opacity: 0;
+    .intro__btn-arow {
         width: 10px;
         height: 18px;
         fill: #fff;
+    }
+    .intro__btn-arow-hovered {
+        display: none;
+        width: 10px;
+        height: 26px;
+        fill: #fff;
+    }
+    &:hover {
+        border-color: #76b7ee;
+        background-color: #76b7ee;
+        transition: border-color 0.25s, background-color 0.25s;
+        .intro__btn-arow {
+            display: none;
+        }
+        .intro__btn-arow-hovered {
+            display: block;
+        }
     }
     &:focus {
         outline: 1px solid #fff;
@@ -118,22 +147,18 @@ body {
         height: 1px;
         background-color: #717b83;
         position: absolute;
-        top: 50%;
+        top: ~"calc(50% + 2px)";
         left: -45px;
         transform: translateY(-50%);
     }
 }
 
-.about {
-    padding-top: 6.7%;
-}
-
 .about__section-desc {
-    margin-bottom: 9.4%;
+    padding: 19.7% 0 9.4%
 }
 
 .about__title {
-    margin-bottom: 4%;
+    margin-bottom: 3.8%;
     text-align: center;
     svg {
         width: 782px;
@@ -149,7 +174,7 @@ body {
     grid-column-gap: 120px;
     grid-row-gap: 20px;
     justify-content: center;
-    margin: 0 8% 4.8% 11.2%;
+    margin: 0 8% 1.5% 8.7%;
     font-size: 24px;
     font-weight: 400;
     p {
@@ -184,12 +209,12 @@ body {
 
 .about__goals {
     display: grid;
-    grid-column-gap: 70px;
+    grid-column-gap: 65px;
     grid-row-gap: 25px;
     grid-template-columns: 350px 500px;
     justify-content: center;
     margin-bottom: 14%;
-    margin-left: 11%;
+    margin-left: 10%;
     @media (max-width: @breakpoint-large-max) {
         margin-left: 0;
     }
@@ -215,7 +240,7 @@ body {
             height: 4px;
             background-color: #1d8bbd;
             position: absolute;
-            top: 50%;
+            top: ~"calc(50% + 6px)";
             left: 0;
             transform: translateY(-50%);
         }
@@ -267,7 +292,7 @@ body {
     padding: 2% 2% 2% 6.5%;
     background-color: #129bc9;
     color: #ffffff;
-    font-size: 2.24vw;
+    font-size: 2.5vw;
     font-weight: 300;
     line-height: 1;
     letter-spacing: 1.4px;
@@ -281,7 +306,7 @@ body {
 .home-tile__text {
     margin-top: 4.5%;
     margin-left: 7%;
-    font-size: 1.13vw;
+    font-size: 1.26vw;
     font-weight: 300;
     white-space: nowrap;
     @media (max-width: @breakpoint-xsmall-max) {
@@ -1777,7 +1802,8 @@ body {
     height: 55px;
     position: fixed;
     top: 75%;
-    left: 95%;
+    right: 2%;
+    z-index: 10;
     background-color: rgba(27%, 30%, 33%, 0.5);
     color: #fff;
     font-size: 11px;
