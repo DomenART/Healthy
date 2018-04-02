@@ -106,7 +106,7 @@ t8.fromTo('.home-layout__basics-point-1', 0.5, {opacity: 0, x: 200}, {opacity: 1
   .fromTo('.home-layout__basics-point-3', 0.5, {opacity: 0, x: 200}, {opacity: 1, x: 0})
   .fromTo('.home-layout__basics-text-3', 0.5, {opacity: 0, x: 200}, {opacity: 1, x: 0})
   .fromTo('.home-layout__basics-text-4', 0.5, {opacity: 0, x: 200}, {opacity: 1, x: 0})
-  .fromTo('.home-layout__cup', 0.5, {scale: 0}, {scale: 1})
+  .fromTo('.home-layout__cup img', 0.5, {scale: 0}, {scale: 1})
   .staggerFromTo('.home-layout__parallax-scene .js-fruit', 0.5, {opacity: 0, scale: 2.5}, {opacity: 1, scale: 1}, 0.1);
 
 const homeBasicsScene = new ScrollMagic.Scene({
@@ -166,9 +166,7 @@ const laptopScene = new ScrollMagic.Scene({
 const t12 = new TimelineMax()
 
 t12.fromTo(['.fonts__comfortaa-name','.fonts__lato-name'], 1, {opacity: 0, y: 200}, {opacity: 1, y: 0})
-   .from(['.fonts__comfortaa-bg','.fonts__lato-bg'], 0.5, {opacity: 0, scale: 0}, '-=0.5')
-   .to(['.fonts__comfortaa-bg','.fonts__lato-bg'], 0.5, {opacity: 1, scale: 1.1})
-   .to(['.fonts__comfortaa-bg','.fonts__lato-bg'], 0.1, {scale: 1})
+   .fromTo(['.fonts__comfortaa-bg','.fonts__lato-bg'], 0.5, {opacity: 0, scale: 0}, {opacity: 1, scale: 1.1}, '-=0.5').to(['.fonts__comfortaa-bg','.fonts__lato-bg'], 0.25, {scale: 1})
    .staggerFromTo('.fonts__headings-row', 1, {opacity: 0}, {opacity: 1}, 0.5);
 
 const fontsScene = new ScrollMagic.Scene({
@@ -185,7 +183,7 @@ t13.fromTo('.guidelines__book-image', 0.5, {opacity: 0, scale: 0}, {opacity: 1, 
    .fromTo('.guidelines__thread', 0.5, {opacity: 0}, {opacity: 1});
 
 const guidelinesBookScene = new ScrollMagic.Scene({
-    triggerElement: ".guidelines"
+    triggerElement: ".guidelines__book"
 })
 .setTween(t13)
 .reverse(false)
