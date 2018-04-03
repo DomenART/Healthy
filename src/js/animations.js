@@ -252,15 +252,15 @@ const viburnumScene = new ScrollMagic.Scene({
 
 //condiment
 const t18 = new TimelineMax()
-t18.to('.adaptability__condiment-1', 1, {yPercent: 9090})
-   .fromTo('.adaptability__condiment-shadow-1', 1, {opacity: 0}, {opacity: 0.57, yPercent: 610}, '+=1')
-   .to('.adaptability__condiment-2', 1, {yPercent: 9160}, '-=0.5')
+t18.to('.adaptability__condiment-1', 3, {yPercent: 9090})
+   .fromTo('.adaptability__condiment-shadow-1', 1, {opacity: 0}, {opacity: 0.57, yPercent: 610}, '-=1')
+   .to('.adaptability__condiment-2', 1, {yPercent: 9160}, '-=2.5')
    .fromTo('.adaptability__condiment-shadow-2', 1, {opacity: 0}, {opacity: 0.57, yPercent: 350}, '-=1');
 
 
 const condimentScene = new ScrollMagic.Scene({
    triggerElement: '.adaptability__layout-11',
-  // offset: '300',
+   offset: '300',
    duration: '100%'
 })
 .setTween(t18)
