@@ -2063,6 +2063,21 @@ body {
   left: 19.0%;
   z-index: 1;
 }
+.adaptability__fruit {
+  width: 7.5%;
+  position: absolute;
+  z-index: 2;
+  top: 67.5%;
+  left: 0.5%;
+}
+.adaptability__fruit-shadow {
+  width: 10%;
+  position: absolute;
+  z-index: 1;
+  top: 68%;
+  left: 0.5%;
+  opacity: 1;
+}
 .ending__content {
   display: -webkit-box;
   display: -ms-flexbox;

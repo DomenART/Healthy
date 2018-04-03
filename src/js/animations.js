@@ -255,8 +255,27 @@ const t18 = new TimelineMax()
 t18.to('.adaptability__condiment-1', 3, {yPercent: 9090})
    .fromTo('.adaptability__condiment-shadow-1', 1, {opacity: 0}, {opacity: 0.57, yPercent: 610}, '-=1')
    .to('.adaptability__condiment-2', 1, {yPercent: 9160}, '-=2.5')
-   .fromTo('.adaptability__condiment-shadow-2', 1, {opacity: 0}, {opacity: 0.57, yPercent: 350}, '-=1');
-
+   .fromTo('.adaptability__condiment-shadow-2', 1, {opacity: 0}, {opacity: 0.57, yPercent: 350}, '-=1')
+   .to('.adaptability__condiment-3', 1, {yPercent: 10300}, '-=2')
+   .fromTo('.adaptability__condiment-shadow-3', 1, {opacity: 0}, {opacity: 0.57, yPercent: 840}, '-=1')
+   .to('.adaptability__condiment-4', 1, {yPercent: 10100}, '-=0.8')
+   .fromTo('.adaptability__condiment-shadow-4', 1, {opacity: 0}, {opacity: 0.57, yPercent: 1370}, '-=1')
+   .to('.adaptability__condiment-5', 1, {yPercent: 9500}, '-=1.4')
+   .fromTo('.adaptability__condiment-shadow-5', 1, {opacity: 0}, {opacity: 0.57, yPercent: 650}, '-=1')
+   .to('.adaptability__condiment-6', 1, {yPercent: 12500}, '-=2')
+   .fromTo('.adaptability__condiment-shadow-6', 1, {opacity: 0}, {opacity: 0.57, yPercent: 1650}, '-=1')
+   .to('.adaptability__condiment-7', 1, {yPercent: 10900}, '-=1.3')
+   .fromTo('.adaptability__condiment-shadow-7', 1, {opacity: 0}, {opacity: 0.57, yPercent: 480}, '-=1')
+   .to('.adaptability__condiment-8', 1, {yPercent: 10650}, '-=2')
+   .fromTo('.adaptability__condiment-shadow-8', 1, {opacity: 0}, {opacity: 0.57, yPercent: 260}, '-=1')
+   .to('.adaptability__condiment-9', 1, {yPercent: 13500}, '-=1.5')
+   .fromTo('.adaptability__condiment-shadow-9', 1, {opacity: 0}, {opacity: 0.57, yPercent: 2800}, '-=1')
+   .to('.adaptability__condiment-10', 1, {yPercent: 14000}, '-=1.2')
+   .fromTo('.adaptability__condiment-shadow-10', 1, {opacity: 0}, {opacity: 0.57, yPercent: 1900}, '-=1')
+   .to('.adaptability__condiment-11', 1, {yPercent: 12000}, '-=1.8')
+   .fromTo('.adaptability__condiment-shadow-11', 1, {opacity: 0}, {opacity: 0.57, yPercent: 350}, '-=1')
+   .to('.adaptability__condiment-12', 1, {yPercent: 11900}, '-=2')
+   .fromTo('.adaptability__condiment-shadow-12', 1, {opacity: 0}, {opacity: 0.57, yPercent: 1380}, '-=1');
 
 const condimentScene = new ScrollMagic.Scene({
    triggerElement: '.adaptability__layout-11',
@@ -264,6 +283,17 @@ const condimentScene = new ScrollMagic.Scene({
    duration: '100%'
 })
 .setTween(t18)
+
+//fruit
+const t19 = new TimelineMax()
+t19.to('.adaptability__fruit', 3, {x: -200, y: 200})
+   .to('.adaptability__fruit-shadow', 3, {opacity: 0.35, x: -200, y: 200}, '-=3');
+
+const fruitScene = new ScrollMagic.Scene({
+   triggerElement: '.adaptability__layout-12',
+   duration: '100%'
+})
+.setTween(t19)
 
 
 //scene controller
@@ -286,7 +316,8 @@ controller.addScene([
     layoutDescScene,
     chocoScene,
     viburnumScene,
-    condimentScene
+    condimentScene,
+    fruitScene
 ]);
 
 window.addEventListener('load', function() {
