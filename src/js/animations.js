@@ -27,6 +27,7 @@ const aboutScene = new ScrollMagic.Scene({
     videoAbout.play()
 })
 
+
 //home-tile block
 const t3 = new TimelineMax()
 
@@ -206,7 +207,7 @@ const guidelinesElementsScene = new ScrollMagic.Scene({
 //layout-desc line
 const t15 = new TimelineMax()
 
-t14.staggerFromTo('.adaptability__devices > div', 0.5, {opacity: 0, x: -300}, {opacity: 1, x: 0, ease: Power2.easeOut}, 0.25)
+t15.staggerFromTo('.adaptability__devices > div', 0.5, {opacity: 0, x: -300}, {opacity: 1, x: 0, ease: Power2.easeOut}, 0.25)
    .fromTo('.adaptability__text', 0.5, {opacity: 0, y: 200}, {opacity: 1, y: 0});
 
 const layoutDescScene = new ScrollMagic.Scene({
@@ -214,6 +215,55 @@ const layoutDescScene = new ScrollMagic.Scene({
 })
 .setTween(t15)
 .reverse(false)
+
+//blueberries
+const t16 = new TimelineMax()
+t16.to('.adaptability__blueberry-1', 0.5, {yPercent: 1440})
+   .to('.adaptability__blueberry-2', 0.5, {yPercent: 1400}, '-=0.5')
+   .fromTo('.adaptability__blueberry-shadow-1', 0.5, {opacity: 0.1}, {opacity: 1, yPercent: 540}, '-=0.5')
+   .fromTo('.adaptability__blueberry-shadow-2', 0.5, {opacity: 0.1}, {opacity: 1, yPercent: 500}, '-=0.5')
+   .to('.adaptability__choco-1', 0.5, {yPercent: 4750}, '-=0.45')
+   .to('.adaptability__choco-2', 0.5, {yPercent:4080}, '-=0.45')
+   .to('.adaptability__choco-3', 0.5, {yPercent: 7400}, '-=0.45')
+   .fromTo('.adaptability__choco-shadow-1', 0.5, {opacity: 0.1}, {opacity: 1, yPercent: 1520},'-=0.45')
+   .fromTo('.adaptability__choco-shadow-2', 0.5, {opacity: 0.1}, {opacity: 1, yPercent:5550}, '-=0.45')
+   .fromTo('.adaptability__choco-shadow-3', 0.5, {opacity: 0.1}, {opacity: 1, yPercent: 2100}, '-=0.45');
+   const chocoScene = new ScrollMagic.Scene({
+       triggerElement: ".adaptability__layout-3",
+       duration: '100%'
+   })
+   .setTween(t16)
+
+
+//viburnum
+const t17 = new TimelineMax()
+t17.to('.adaptability__viburnum-1', 0.05, {opacity: 1}).to('.adaptability__viburnum-1', 3, {yPercent: 1650})
+   .to('.adaptability__viburnum-2', 3, {xPercent: -140, yPercent: 3650}, '-=2.5')
+   .to('.adaptability__viburnum-3', 2, {xPercent: -40, yPercent: 2380}, '-=2.5')
+   .fromTo('.adaptability__viburnum-shadow-1', 0.5, {opacity: 0.01}, {opacity: 0.3, yPercent: 300}, '-=2.5')
+   .fromTo('.adaptability__viburnum-shadow-2', 0.5, {opacity: 0.03},{opacity: 1, xPercent: -140, yPercent: 1600}, '-=2.5')
+   .fromTo('.adaptability__viburnum-shadow-3', 0.5, {opacity: 0.07},{pacity: 1, xPercent: -40, yPercent: 1650}, '-=2.5');
+
+const viburnumScene = new ScrollMagic.Scene({
+   triggerElement: '.adaptability__layout-10',
+   duration: '100%'
+})
+.setTween(t17)
+
+//condiment
+const t18 = new TimelineMax()
+t18.to('.adaptability__condiment-1', 1, {yPercent: 9090})
+   .fromTo('.adaptability__condiment-shadow-1', 1, {opacity: 0}, {opacity: 0.57, yPercent: 610}, '+=1')
+   .to('.adaptability__condiment-2', 1, {yPercent: 9160}, '-=0.5')
+   .fromTo('.adaptability__condiment-shadow-2', 1, {opacity: 0}, {opacity: 0.57, yPercent: 350}, '-=1');
+
+
+const condimentScene = new ScrollMagic.Scene({
+   triggerElement: '.adaptability__layout-11',
+  // offset: '300',
+   duration: '100%'
+})
+.setTween(t18)
 
 
 //scene controller
@@ -232,9 +282,32 @@ controller.addScene([
     laptopScene,
     fontsScene,
     guidelinesBookScene,
-    guidelinesElementsScene
+    guidelinesElementsScene,
+    layoutDescScene,
+    chocoScene,
+    viburnumScene,
+    condimentScene
 ]);
 
 window.addEventListener('load', function() {
     t1.play()
 })
+
+
+t1.pause(true)
+t2.pause(true)
+t3.pause(true)
+t4.pause(true)
+t5.pause(true)
+t6.pause(true)
+t7.pause(true)
+t8.pause(true)
+t9.pause(true)
+t10.pause(true)
+t11.pause(true)
+t12.pause(true)
+t13.pause(true)
+t14.pause(true)
+t15.pause(true)
+t16.pause(true)
+t17.pause(true)

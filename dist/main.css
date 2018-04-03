@@ -1752,46 +1752,316 @@ body {
   left: 52%;
 }
 .ending__fruit-3 {
-  position: absolute;
   width: 5%;
+  position: absolute;
   top: 91%;
   left: 59.5%;
 }
 .ending__fruit-4 {
-  position: absolute;
   width: 5%;
+  position: absolute;
   left: 66%;
   top: 95.5%;
 }
 .ending__fruit-5 {
-  position: absolute;
   width: 4%;
+  position: absolute;
   top: 93%;
   left: 76.4%;
 }
 .ending__fruit-6 {
-  position: absolute;
   width: 18%;
+  position: absolute;
   top: 96.8%;
   left: 47.7%;
 }
 .ending__fruit-7 {
-  position: absolute;
   width: 5%;
+  position: absolute;
   top: 102%;
   left: 73%;
 }
 .ending__fruit-8 {
-  position: absolute;
   width: 12%;
+  position: absolute;
   top: 113%;
   left: 79%;
 }
 .ending__fruit-9 {
-  position: absolute;
   width: 5%;
+  position: absolute;
   top: 110%;
   left: 80%;
+}
+.adaptability__blueberry-1 {
+  width: 4%;
+  position: absolute;
+  top: 1.5%;
+  left: 19%;
+  z-index: 2;
+}
+.adaptability__blueberry-2 {
+  width: 4%;
+  position: absolute;
+  top: 2%;
+  left: 16%;
+  z-index: 2;
+}
+.adaptability__blueberry-shadow-1 {
+  width: 4%;
+  position: absolute;
+  top: 10.5%;
+  left: 19%;
+  z-index: 1;
+}
+.adaptability__blueberry-shadow-2 {
+  width: 4%;
+  position: absolute;
+  top: 12.5%;
+  left: 16%;
+  z-index: 1;
+}
+.adaptability__choco-1 {
+  width: 1.5%;
+  position: absolute;
+  top: -2%;
+  left: 28%;
+  z-index: 2;
+}
+.adaptability__choco-2 {
+  width: 2%;
+  position: absolute;
+  top: 2.8%;
+  left: 13%;
+  z-index: 2;
+}
+.adaptability__choco-3 {
+  width: 1.5%;
+  position: absolute;
+  top: 0%;
+  left: 5.2%;
+  z-index: 2;
+}
+.adaptability__choco-shadow-1 {
+  width: 1.5%;
+  position: absolute;
+  top: 13%;
+  left: 28%;
+  z-index: 2;
+}
+.adaptability__choco-shadow-2 {
+  width: 2%;
+  position: absolute;
+  top: 11%;
+  left: 15.8%;
+  z-index: 2;
+}
+.adaptability__choco-shadow-3 {
+  width: 1.5%;
+  position: absolute;
+  top: 13%;
+  left: 5.2%;
+  z-index: 2;
+}
+.adaptability__viburnum-1 {
+  width: 5.5%;
+  position: absolute;
+  top: 24.8%;
+  left: 62.5%;
+  z-index: 2;
+  opacity: 0;
+}
+.adaptability__viburnum-2 {
+  width: 1%;
+  position: absolute;
+  top: 28.9%;
+  left: 52.4%;
+  z-index: 2;
+}
+.adaptability__viburnum-3 {
+  width: 3%;
+  position: absolute;
+  top: 29%;
+  left: 53%;
+  z-index: 2;
+}
+.adaptability__viburnum-shadow-1 {
+  width: 5.5%;
+  position: absolute;
+  top: 39.8%;
+  left: 62.5%;
+  z-index: 1;
+  opacity: 0;
+}
+.adaptability__viburnum-shadow-2 {
+  width: 1%;
+  position: absolute;
+  top: 41%;
+  left: 52.4%;
+  z-index: 1;
+}
+.adaptability__viburnum-shadow-3 {
+  width: 3%;
+  position: absolute;
+  top: 39.5%;
+  left: 53%;
+  z-index: 1;
+}
+.adaptability__condiment-1 {
+  width: 0.6%;
+  position: absolute;
+  top: 49.8%;
+  left: 11.5%;
+}
+.adaptability__condiment-2 {
+  width: 0.6%;
+  position: absolute;
+  top: 50.3%;
+  left: 15.3%;
+}
+.adaptability__condiment-3 {
+  width: 0.6%;
+  position: absolute;
+  top: 49.72%;
+  left: 16.4%;
+}
+.adaptability__condiment-4 {
+  width: 0.65%;
+  position: absolute;
+  top: 49.35%;
+  left: 15.2%;
+}
+.adaptability__condiment-5 {
+  width: 0.6%;
+  position: absolute;
+  top: 48.85%;
+  left: 14.3%;
+}
+.adaptability__condiment-6 {
+  width: 0.5%;
+  position: absolute;
+  top: 48.9%;
+  left: 15.4%;
+}
+.adaptability__condiment-7 {
+  width: 0.5%;
+  position: absolute;
+  top: 48.5%;
+  left: 14.9%;
+}
+.adaptability__condiment-8 {
+  width: 0.5%;
+  position: absolute;
+  top: 49.2%;
+  left: 18.7%;
+}
+.adaptability__condiment-9 {
+  width: 0.5%;
+  position: absolute;
+  top: 49%;
+  left: 19.9%;
+}
+.adaptability__condiment-10 {
+  width: 0.5%;
+  position: absolute;
+  top: 49.3%;
+  left: 22.5%;
+}
+.adaptability__condiment-11 {
+  width: 0.5%;
+  position: absolute;
+  top: 49%;
+  left: 23.4%;
+}
+.adaptability__condiment-12 {
+  width: 0.6%;
+  position: absolute;
+  top: 45.85%;
+  left: 19.0%;
+}
+.adaptability__condiment-shadow-1 {
+  width: 0.6%;
+  position: absolute;
+  top: 68%;
+  left: 11.5%;
+  z-index: 1;
+}
+.adaptability__condiment-shadow-2 {
+  width: 0.6%;
+  position: absolute;
+  top: 67.5%;
+  left: 15.3%;
+  z-index: 1;
+}
+.adaptability__condiment-shadow-3 {
+  width: 0.6%;
+  position: absolute;
+  top: 67.9%;
+  left: 16.4%;
+  z-index: 1;
+}
+.adaptability__condiment-shadow-4 {
+  width: 0.65%;
+  position: absolute;
+  top: 66%;
+  left: 15.2%;
+  z-index: 1;
+}
+.adaptability__condiment-shadow-5 {
+  width: 0.6%;
+  position: absolute;
+  top: 65.85%;
+  left: 14.3%;
+  z-index: 1;
+}
+.adaptability__condiment-shadow-6 {
+  width: 0.5%;
+  position: absolute;
+  top: 65.9%;
+  left: 15.4%;
+  z-index: 1;
+}
+.adaptability__condiment-shadow-7 {
+  width: 0.5%;
+  position: absolute;
+  top: 65.5%;
+  left: 14.9%;
+  z-index: 1;
+}
+.adaptability__condiment-shadow-8 {
+  width: 0.5%;
+  position: absolute;
+  top: 66.2%;
+  left: 18.7%;
+  z-index: 1;
+}
+.adaptability__condiment-shadow-9 {
+  width: 0.5%;
+  position: absolute;
+  top: 64%;
+  left: 19.9%;
+  z-index: 1;
+}
+.adaptability__condiment-shadow-10 {
+  width: 0.5%;
+  position: absolute;
+  top: 66.3%;
+  left: 22.5%;
+  z-index: 1;
+}
+.adaptability__condiment-shadow-11 {
+  width: 0.5%;
+  position: absolute;
+  top: 66%;
+  left: 23.4%;
+  z-index: 1;
+}
+.adaptability__condiment-shadow-12 {
+  width: 0.6%;
+  position: absolute;
+  top: 66.85%;
+  left: 19.0%;
+  z-index: 1;
 }
 .ending__content {
   display: -webkit-box;
