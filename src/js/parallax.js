@@ -1,8 +1,7 @@
 import Parallax from 'parallax-js'
 
-var scene = document.getElementById('parallax-scene')
+var scene1 = document.getElementById('basics-parallax-scene')
 
-
-var parallax = new Parallax(scene, {
+var parallax = new Parallax(scene1, {
   //selector: 'img'
 });

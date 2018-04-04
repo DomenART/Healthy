@@ -295,6 +295,176 @@ const fruitScene = new ScrollMagic.Scene({
 })
 .setTween(t19)
 
+//layouts
+const t20 = TweenMax.fromTo('.adaptability__layout-1', 0.5, {opacity: 0, x: 200, y: 200}, {opacity: 1, x: 0, y: 0, ease: Expo.easeIn})
+const layout1Scene = new ScrollMagic.Scene({
+   triggerElement: '.adaptability__layout-1',
+   reverse: false
+})
+.setTween(t20)
+
+const t21 = TweenMax.fromTo('.adaptability__layout-2', 0.5, {opacity: 0, x: 200, y: 200}, {opacity: 1, x: 0, y: 0, ease: Expo.easeIn})
+const layout2Scene = new ScrollMagic.Scene({
+   triggerElement: '.adaptability__layout-2',
+   reverse: false
+})
+.setTween(t21)
+
+const  t22 = TweenMax.fromTo('.adaptability__layout-3', 0.5, {opacity: 0, x: 200, y: 200}, {opacity: 1, x: 0, y: 0, ease: Expo.easeIn})
+const layout3Scene = new ScrollMagic.Scene({
+   triggerElement: '.adaptability__layout-3',
+   reverse: false
+})
+.setTween(t22)
+
+const  t23 = TweenMax.fromTo('.adaptability__layout-4', 0.5, {opacity: 0, x: 200, y: 200}, {opacity: 1, x: 0, y: 0, ease: Expo.easeIn})
+const layout4Scene = new ScrollMagic.Scene({
+   triggerElement: '.adaptability__layout-4',
+   reverse: false
+})
+.setTween(t23)
+
+const  t24 = TweenMax.fromTo('.adaptability__layout-5', 0.5, {opacity: 0, x: 200, y: 200}, {opacity: 1, x: 0, y: 0, ease: Expo.easeIn})
+const layout5Scene = new ScrollMagic.Scene({
+   triggerElement: '.adaptability__layout-5',
+   reverse: false
+})
+.setTween(t24)
+
+const  t25 = TweenMax.fromTo('.adaptability__layout-6', 0.5, {opacity: 0, x: 200, y: 200}, {opacity: 1, x: 0, y: 0, ease: Expo.easeIn})
+const layout6Scene = new ScrollMagic.Scene({
+   triggerElement: '.adaptability__layout-6',
+   reverse: false
+})
+.setTween(t25)
+
+const  t26 = TweenMax.fromTo('.adaptability__layout-7', 0.5, {opacity: 0, x: 200, y: 200}, {opacity: 1, x: 0, y: 0, ease: Expo.easeIn})
+const layout7Scene = new ScrollMagic.Scene({
+   triggerElement: '.adaptability__layout-7',
+   reverse: false
+})
+.setTween(t26)
+
+const  t27 = TweenMax.fromTo('.adaptability__layout-8', 0.5, {opacity: 0, x: 200, y: 200}, {opacity: 1, x: 0, y: 0, ease: Expo.easeIn})
+const layout8Scene = new ScrollMagic.Scene({
+   triggerElement: '.adaptability__layout-8',
+   reverse: false
+})
+.setTween(t27)
+
+const  t28 = TweenMax.fromTo('.adaptability__layout-9', 0.5, {opacity: 0, x: 200, y: 200}, {opacity: 1, x: 0, y: 0, ease: Expo.easeIn})
+const layout9Scene = new ScrollMagic.Scene({
+   triggerElement: '.adaptability__layout-9',
+   reverse: false
+})
+.setTween(t28)
+
+const  t29 = TweenMax.fromTo('.adaptability__layout-10', 0.5, {opacity: 0, x: 200, y: 200}, {opacity: 1, x: 0, y: 0, ease: Expo.easeIn})
+const layout10Scene = new ScrollMagic.Scene({
+   triggerElement: '.adaptability__layout-10',
+   reverse: false
+})
+.setTween(t29)
+
+const  t30 = TweenMax.fromTo('.adaptability__layout-11', 0.5, {opacity: 0, x: 200, y: 200}, {opacity: 1, x: 0, y: 0, ease: Expo.easeIn})
+const layout11Scene = new ScrollMagic.Scene({
+   triggerElement: '.adaptability__layout-11',
+   reverse: false
+})
+.setTween(t30)
+
+const  t31 = TweenMax.fromTo('.adaptability__layout-12', 0.5, {opacity: 0, x: 200, y: 200}, {opacity: 1, x: 0, y: 0, ease: Expo.easeIn})
+const layout12Scene = new ScrollMagic.Scene({
+   triggerElement: '.adaptability__layout-12',
+   reverse: false
+})
+.setTween(t31)
+
+const  t32 = TweenMax.fromTo('.adaptability__layout-13', 0.5, {opacity: 0, x: 200, y: 200}, {opacity: 1, x: 0, y: 0, ease: Expo.easeIn})
+const layout13Scene = new ScrollMagic.Scene({
+   triggerElement: '.adaptability__layout-13',
+   reverse: false
+})
+.setTween(t32)
+
+const  t33 = TweenMax.fromTo('.adaptability__layout-14', 0.5, {opacity: 0, x: 200, y: 200}, {opacity: 1, x: 0, y: 0, ease: Expo.easeIn})
+const layout14Scene = new ScrollMagic.Scene({
+   triggerElement: '.adaptability__layout-14',
+   reverse: false
+})
+.setTween(t33)
+
+const  t34 = TweenMax.fromTo('.adaptability__layout-15', 0.5, {opacity: 0, x: 200, y: 200}, {opacity: 1, x: 0, y: 0, ease: Expo.easeIn})
+const layout15Scene = new ScrollMagic.Scene({
+   triggerElement: '.adaptability__layout-15',
+   reverse: false
+})
+.setTween(t34)
+
+const  t35 = TweenMax.fromTo('.adaptability__layout-16', 0.5, {opacity: 0, x: 200, y: 200}, {opacity: 1, x: 0, y: 0, ease: Expo.easeIn})
+const layout16Scene = new ScrollMagic.Scene({
+   triggerElement: '.adaptability__layout-16',
+   reverse: false
+})
+.setTween(t35)
+
+const t36 = TweenMax.fromTo('.adaptability__layout-17', 0.5, {opacity: 0, x: 200, y: 200}, {opacity: 1, x: 0, y: 0, ease: Expo.easeIn})
+const layout17Scene = new ScrollMagic.Scene({
+   triggerElement: '.adaptability__layout-17',
+   reverse: false
+})
+.setTween(t36)
+
+const  t37 = TweenMax.fromTo('.adaptability__layout-18', 0.5, {opacity: 0, x: 200, y: 200}, {opacity: 1, x: 0, y: 0, ease: Expo.easeIn})
+const layout18Scene = new ScrollMagic.Scene({
+   triggerElement: '.adaptability__layout-18',
+   reverse: false
+})
+.setTween(t37)
+
+const  t38 = TweenMax.fromTo('.adaptability__layout-19', 0.5, {opacity: 0, x: 200, y: 200}, {opacity: 1, x: 0, y: 0, ease: Expo.easeIn})
+const layout19Scene = new ScrollMagic.Scene({
+   triggerElement: '.adaptability__layout-19',
+   reverse: false
+})
+.setTween(t38)
+
+//ending
+const t39 = new TimelineMax()
+t39.to('.ending__iphone', 5, {x: 50, y: 270})
+   .to('.ending__macbook', 3, {x: 20, y: -490})
+   .to('.ending__fruit-1', 3, {y: 50}, '-=1.5')
+   .to('.ending__fruit-2', 3, {x: 20, y: 270}, '-=1.5')
+   .to('.ending__fruit-3', 3, {x: 20, y: -50}, '-=1.7')
+   .to('.ending__fruit-4', 3, {x: 20, y: -80}, '-=1.2')
+   .to('.ending__fruit-5', 3, {x: 25, y: -45}, '-=0.5')
+   .to('.ending__fruit-6', 3, {x: 20, y: -50}, '-=0.5')
+   .to('.ending__fruit-7', 3, {x: 70, y: -130}, '-=0.5')
+   .to('.ending__fruit-8', 3, {x: 75, y: -320})
+   .to('.ending__fruit-9', 3, {x: 70, y: -260});
+
+const endingScene = new ScrollMagic.Scene({
+   triggerElement: '.ending',
+   duration: '150%',
+   offset: '300',
+   reverse: true
+})
+.setTween(t39)
+
+const t40 = new TimelineMax()
+t40.fromTo('.ending__substrate-left', 0.5, {xPercent: -100}, {xPercent: 0, ease: Power4.easeInOut})
+   .fromTo('.ending__substrate-right', 0.5, {xPercent: 100}, {xPercent: 0, ease: Power4.easeInOut}, '-=0.5')
+   .fromTo('.ending__gratitude-first', 0.5, {opacity: 0, scale: 2}, {opacity: 1, scale: 1})
+   .fromTo('.ending__gratitude-second-image', 0.5, {opacity: 0, rotationY: -90}, {opacity: 1, transformOrigin: '50% 0', rotationY: 0})
+   .fromTo('.ending__gratitude-decor-left', 1, {opacity: 0, scale: 0}, {opacity: 1, scale: 1, transformOrigin: '100% 50%'})
+   .fromTo('.ending__gratitude-decor-right', 1, {opacity: 0, scale: 0}, {opacity: 1, scale: 1, transformOrigin: '0% 50%'}, '-=1')
+   .fromTo('.ending__btn', 0.5, {opacity: 0}, {opacity: 1});
+
+const endingContentScene = new ScrollMagic.Scene({
+   triggerElement: '.ending__macbook',
+   reverse: false
+})
+.setTween(t40)
 
 //scene controller
 const controller = new ScrollMagic.Controller();
@@ -317,7 +487,28 @@ controller.addScene([
     chocoScene,
     viburnumScene,
     condimentScene,
-    fruitScene
+    fruitScene,
+    layout1Scene,
+    layout2Scene,
+    layout3Scene,
+    layout4Scene,
+    layout5Scene,
+    layout6Scene,
+    layout7Scene,
+    layout8Scene,
+    layout9Scene,
+    layout10Scene,
+    layout11Scene,
+    layout12Scene,
+    layout13Scene,
+    layout14Scene,
+    layout15Scene,
+    layout16Scene,
+    layout17Scene,
+    layout18Scene,
+    layout19Scene,
+    endingScene,
+    endingContentScene
 ]);
 
 window.addEventListener('load', function() {
@@ -342,3 +533,24 @@ t14.pause(true)
 t15.pause(true)
 t16.pause(true)
 t17.pause(true)
+t18.pause(true)
+t19.pause(true)
+t20.pause(true)
+t21.pause(true)
+t22.pause(true)
+t23.pause(true)
+t24.pause(true)
+t25.pause(true)
+t26.pause(true)
+t27.pause(true)
+t28.pause(true)
+t29.pause(true)
+t30.pause(true)
+t31.pause(true)
+t32.pause(true)
+t33.pause(true)
+t34.pause(true)
+t35.pause(true)
+t36.pause(true)
+t37.pause(true)
+t38.pause(true)
