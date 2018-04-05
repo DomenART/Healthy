@@ -494,6 +494,9 @@ let endingScene = new ScrollMagic.Scene({
 })
 .setTween(t39)
 
+tweensArray.push(t39)
+sceneArray.push(endingScene)
+
 let t40 = new TimelineMax()
 t40.fromTo('.ending__substrate-left', 0.5, {xPercent: -100}, {xPercent: 0, ease: Power4.easeInOut})
    .fromTo('.ending__substrate-right', 0.5, {xPercent: 100}, {xPercent: 0, ease: Power4.easeInOut}, '-=0.5')
@@ -509,77 +512,80 @@ let endingContentScene = new ScrollMagic.Scene({
 })
 .setTween(t40)
 
+tweensArray.push(t40)
+sceneArray.push(endingContentScene)
+
 //scene controller
 let controller = new ScrollMagic.Controller();
 
-controller.addScene([
-    aboutScene,
-    homeTileScene,
-    homeNewsTopicScene,
-    homeArticlesScene,
-    homeNewsScene,
-    homeQuestionnaireScene,
-    homeBasicsScene,
-    homeReadMoreScene,
-    homeReferenceScene,
-    laptopScene,
-    fontsScene,
-    guidelinesBookScene,
-    guidelinesElementsScene,
-    layoutDescScene,
-    chocoScene,
-    viburnumScene,
-    condimentScene,
-    fruitScene,
-    layout1Scene,
-    layout2Scene,
-    layout3Scene,
-    layout4Scene,
-    layout5Scene,
-    layout6Scene,
-    layout7Scene,
-    layout8Scene,
-    layout9Scene,
-    layout10Scene,
-    layout11Scene,
-    layout12Scene,
-    layout13Scene,
-    layout14Scene,
-    layout15Scene,
-    layout16Scene,
-    layout17Scene,
-    layout18Scene,
-    layout19Scene,
-    endingScene,
-    endingContentScene
-]);
+controller.addScene(sceneArray);
+// controller.addScene([
+//     aboutScene,
+//     homeTileScene,
+//     homeNewsTopicScene,
+//     homeArticlesScene,
+//     homeNewsScene,
+//     homeQuestionnaireScene,
+//     homeBasicsScene,
+//     homeReadMoreScene,
+//     homeReferenceScene,
+//     laptopScene,
+//     fontsScene,
+//     guidelinesBookScene,
+//     guidelinesElementsScene,
+//     layoutDescScene,
+//     chocoScene,
+//     viburnumScene,
+//     condimentScene,
+//     fruitScene,
+//     layout1Scene,
+//     layout2Scene,
+//     layout3Scene,
+//     layout4Scene,
+//     layout5Scene,
+//     layout6Scene,
+//     layout7Scene,
+//     layout8Scene,
+//     layout9Scene,
+//     layout10Scene,
+//     layout11Scene,
+//     layout12Scene,
+//     layout13Scene,
+//     layout14Scene,
+//     layout15Scene,
+//     layout16Scene,
+//     layout17Scene,
+//     layout18Scene,
+//     layout19Scene,
+//     endingScene,
+//     endingContentScene
+// ]);
 
 
 //RESET ANIMATIONS
 var resetBtn = document.querySelector('.ending__btn-icon');
 
 resetBtn.addEventListener('click', function() {
+    window.scrollTo(0,0)
     resetScene()
     resetTweens()
-    window.scrollTo(0,0)
-    setTimeout(startScene, 5000)
+    setTimeout(startScene, 500)
 })
 
 let resetScene = function() {
     sceneArray.forEach(function(element) {
-        element.progress(0)
-        element.enabled(false)
+        element.reverse(true)
     })
 }
 
 let startScene = function() {
     sceneArray.forEach(function(element) {
-        element.enabled(true)
+        element.reverse(false)
     })
 }
 
 let resetTweens = function() {
-    tweensArray.forEach(function(element) {
-        element.time(0)
-    })
+    // tweensArray.forEach(function(element) {
+        t1.time(0)
+    // })
 }
