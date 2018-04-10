@@ -232,6 +232,9 @@ let guidelinesBookScene = new ScrollMagic.Scene({
 })
 .setTween(t13)
 
+tweensArray.push(t13)
+sceneArray.push(guidelinesBookScene)
+
 //guideline-elements line
 let t14 = new TimelineMax()
 
@@ -247,6 +250,8 @@ let guidelinesElementsScene = new ScrollMagic.Scene({
 })
 .setTween(t14)
 
+tweensArray.push(t14)
+sceneArray.push(guidelinesElementsScene)
 
 //layout-desc line
 let t15 = new TimelineMax()
@@ -260,6 +265,9 @@ let layoutDescScene = new ScrollMagic.Scene({
 })
 .setTween(t15)
 
+tweensArray.push(t15)
+sceneArray.push(layoutDescScene)
+
 //blueberries
 let t16 = new TimelineMax()
 t16.to('.adaptability__blueberry-1', 0.5, {yPercent: 1440})
@@ -272,11 +280,15 @@ t16.to('.adaptability__blueberry-1', 0.5, {yPercent: 1440})
    .fromTo('.adaptability__choco-shadow-1', 0.5, {opacity: 0.1}, {opacity: 1, yPercent: 1520},'-=0.45')
    .fromTo('.adaptability__choco-shadow-2', 0.5, {opacity: 0.1}, {opacity: 1, yPercent:5550}, '-=0.45')
    .fromTo('.adaptability__choco-shadow-3', 0.5, {opacity: 0.1}, {opacity: 1, yPercent: 2100}, '-=0.45');
-   let chocoScene = new ScrollMagic.Scene({
-       triggerElement: ".adaptability__layout-3",
-       duration: '100%'
-   })
-   .setTween(t16)
+
+let chocoScene = new ScrollMagic.Scene({
+   triggerElement: ".adaptability__layout-3",
+   duration: '100%'
+})
+.setTween(t16)
+
+tweensArray.push(t16)
+sceneArray.push(chocoScene)
 
 //viburnum
 let t17 = new TimelineMax()
@@ -292,6 +304,9 @@ let viburnumScene = new ScrollMagic.Scene({
    duration: '100%'
 })
 .setTween(t17)
+
+tweensArray.push(t17)
+sceneArray.push(viburnumScene)
 
 //condiment
 let t18 = new TimelineMax()
@@ -327,6 +342,9 @@ let condimentScene = new ScrollMagic.Scene({
 })
 .setTween(t18)
 
+tweensArray.push(t18)
+sceneArray.push(condimentScene)
+
 //fruit
 let t19 = new TimelineMax()
 t19.to('.adaptability__fruit', 3, {x: -200, y: 200})
@@ -338,6 +356,9 @@ let fruitScene = new ScrollMagic.Scene({
 })
 .setTween(t19)
 
+tweensArray.push(t19)
+sceneArray.push(fruitScene)
+
 //layouts
 let t20 = TweenMax.fromTo('.adaptability__layout-1', 0.5, {opacity: 0, x: 200, y: 200}, {opacity: 1, x: 0, y: 0, ease: Expo.easeIn})
 let layout1Scene = new ScrollMagic.Scene({
@@ -346,12 +367,18 @@ let layout1Scene = new ScrollMagic.Scene({
 })
 .setTween(t20)
 
+tweensArray.push(t20)
+sceneArray.push(layout1Scene)
+
 let t21 = TweenMax.fromTo('.adaptability__layout-2', 0.5, {opacity: 0, x: 200, y: 200}, {opacity: 1, x: 0, y: 0, ease: Expo.easeIn})
 let layout2Scene = new ScrollMagic.Scene({
    triggerElement: '.adaptability__layout-2',
    reverse: false
 })
 .setTween(t21)
+
+tweensArray.push(t21)
+sceneArray.push(layout2Scene)
 
 let  t22 = TweenMax.fromTo('.adaptability__layout-3', 0.5, {opacity: 0, x: 200, y: 200}, {opacity: 1, x: 0, y: 0, ease: Expo.easeIn})
 let layout3Scene = new ScrollMagic.Scene({
@@ -360,12 +387,18 @@ let layout3Scene = new ScrollMagic.Scene({
 })
 .setTween(t22)
 
+tweensArray.push(t22)
+sceneArray.push(layout3Scene)
+
 let  t23 = TweenMax.fromTo('.adaptability__layout-4', 0.5, {opacity: 0, x: 200, y: 200}, {opacity: 1, x: 0, y: 0, ease: Expo.easeIn})
 let layout4Scene = new ScrollMagic.Scene({
    triggerElement: '.adaptability__layout-4',
    reverse: false
 })
 .setTween(t23)
+
+tweensArray.push(t23)
+sceneArray.push(layout4Scene)
 
 let  t24 = TweenMax.fromTo('.adaptability__layout-5', 0.5, {opacity: 0, x: 200, y: 200}, {opacity: 1, x: 0, y: 0, ease: Expo.easeIn})
 let layout5Scene = new ScrollMagic.Scene({
@@ -374,12 +407,18 @@ let layout5Scene = new ScrollMagic.Scene({
 })
 .setTween(t24)
 
+tweensArray.push(t24)
+sceneArray.push(layout5Scene)
+
 let  t25 = TweenMax.fromTo('.adaptability__layout-6', 0.5, {opacity: 0, x: 200, y: 200}, {opacity: 1, x: 0, y: 0, ease: Expo.easeIn})
 let layout6Scene = new ScrollMagic.Scene({
    triggerElement: '.adaptability__layout-6',
    reverse: false
 })
 .setTween(t25)
+
+tweensArray.push(t25)
+sceneArray.push(layout6Scene)
 
 let  t26 = TweenMax.fromTo('.adaptability__layout-7', 0.5, {opacity: 0, x: 200, y: 200}, {opacity: 1, x: 0, y: 0, ease: Expo.easeIn})
 let layout7Scene = new ScrollMagic.Scene({
@@ -388,12 +427,18 @@ let layout7Scene = new ScrollMagic.Scene({
 })
 .setTween(t26)
 
+tweensArray.push(t26)
+sceneArray.push(layout7Scene)
+
 let  t27 = TweenMax.fromTo('.adaptability__layout-8', 0.5, {opacity: 0, x: 200, y: 200}, {opacity: 1, x: 0, y: 0, ease: Expo.easeIn})
 let layout8Scene = new ScrollMagic.Scene({
    triggerElement: '.adaptability__layout-8',
    reverse: false
 })
 .setTween(t27)
+
+tweensArray.push(t27)
+sceneArray.push(layout8Scene)
 
 let  t28 = TweenMax.fromTo('.adaptability__layout-9', 0.5, {opacity: 0, x: 200, y: 200}, {opacity: 1, x: 0, y: 0, ease: Expo.easeIn})
 let layout9Scene = new ScrollMagic.Scene({
@@ -402,12 +447,18 @@ let layout9Scene = new ScrollMagic.Scene({
 })
 .setTween(t28)
 
+tweensArray.push(t28)
+sceneArray.push(layout9Scene)
+
 let  t29 = TweenMax.fromTo('.adaptability__layout-10', 0.5, {opacity: 0, x: 200, y: 200}, {opacity: 1, x: 0, y: 0, ease: Expo.easeIn})
 let layout10Scene = new ScrollMagic.Scene({
    triggerElement: '.adaptability__layout-10',
    reverse: false
 })
 .setTween(t29)
+
+tweensArray.push(t29)
+sceneArray.push(layout10Scene)
 
 let  t30 = TweenMax.fromTo('.adaptability__layout-11', 0.5, {opacity: 0, x: 200, y: 200}, {opacity: 1, x: 0, y: 0, ease: Expo.easeIn})
 let layout11Scene = new ScrollMagic.Scene({
@@ -416,12 +467,18 @@ let layout11Scene = new ScrollMagic.Scene({
 })
 .setTween(t30)
 
+tweensArray.push(t30)
+sceneArray.push(layout11Scene)
+
 let  t31 = TweenMax.fromTo('.adaptability__layout-12', 0.5, {opacity: 0, x: 200, y: 200}, {opacity: 1, x: 0, y: 0, ease: Expo.easeIn})
 let layout12Scene = new ScrollMagic.Scene({
    triggerElement: '.adaptability__layout-12',
    reverse: false
 })
 .setTween(t31)
+
+tweensArray.push(t31)
+sceneArray.push(layout12Scene)
 
 let  t32 = TweenMax.fromTo('.adaptability__layout-13', 0.5, {opacity: 0, x: 200, y: 200}, {opacity: 1, x: 0, y: 0, ease: Expo.easeIn})
 let layout13Scene = new ScrollMagic.Scene({
@@ -430,12 +487,18 @@ let layout13Scene = new ScrollMagic.Scene({
 })
 .setTween(t32)
 
+tweensArray.push(t32)
+sceneArray.push(layout13Scene)
+
 let  t33 = TweenMax.fromTo('.adaptability__layout-14', 0.5, {opacity: 0, x: 200, y: 200}, {opacity: 1, x: 0, y: 0, ease: Expo.easeIn})
 let layout14Scene = new ScrollMagic.Scene({
    triggerElement: '.adaptability__layout-14',
    reverse: false
 })
 .setTween(t33)
+
+tweensArray.push(t33)
+sceneArray.push(layout14Scene)
 
 let  t34 = TweenMax.fromTo('.adaptability__layout-15', 0.5, {opacity: 0, x: 200, y: 200}, {opacity: 1, x: 0, y: 0, ease: Expo.easeIn})
 let layout15Scene = new ScrollMagic.Scene({
@@ -444,12 +507,18 @@ let layout15Scene = new ScrollMagic.Scene({
 })
 .setTween(t34)
 
+tweensArray.push(t34)
+sceneArray.push(layout15Scene)
+
 let  t35 = TweenMax.fromTo('.adaptability__layout-16', 0.5, {opacity: 0, x: 200, y: 200}, {opacity: 1, x: 0, y: 0, ease: Expo.easeIn})
 let layout16Scene = new ScrollMagic.Scene({
    triggerElement: '.adaptability__layout-16',
    reverse: false
 })
 .setTween(t35)
+
+tweensArray.push(t35)
+sceneArray.push(layout16Scene)
 
 let t36 = TweenMax.fromTo('.adaptability__layout-17', 0.5, {opacity: 0, x: 200, y: 200}, {opacity: 1, x: 0, y: 0, ease: Expo.easeIn})
 let layout17Scene = new ScrollMagic.Scene({
@@ -458,6 +527,9 @@ let layout17Scene = new ScrollMagic.Scene({
 })
 .setTween(t36)
 
+tweensArray.push(t36)
+sceneArray.push(layout17Scene)
+
 let  t37 = TweenMax.fromTo('.adaptability__layout-18', 0.5, {opacity: 0, x: 200, y: 200}, {opacity: 1, x: 0, y: 0, ease: Expo.easeIn})
 let layout18Scene = new ScrollMagic.Scene({
    triggerElement: '.adaptability__layout-18',
@@ -465,12 +537,18 @@ let layout18Scene = new ScrollMagic.Scene({
 })
 .setTween(t37)
 
+tweensArray.push(t37)
+sceneArray.push(layout18Scene)
+
 let  t38 = TweenMax.fromTo('.adaptability__layout-19', 0.5, {opacity: 0, x: 200, y: 200}, {opacity: 1, x: 0, y: 0, ease: Expo.easeIn})
 let layout19Scene = new ScrollMagic.Scene({
    triggerElement: '.adaptability__layout-19',
    reverse: false
 })
 .setTween(t38)
+
+tweensArray.push(t38)
+sceneArray.push(layout19Scene)
 
 //ending
 let t39 = new TimelineMax()
@@ -519,48 +597,6 @@ sceneArray.push(endingContentScene)
 let controller = new ScrollMagic.Controller();
 
 controller.addScene(sceneArray);
-// controller.addScene([
-//     aboutScene,
-//     homeTileScene,
-//     homeNewsTopicScene,
-//     homeArticlesScene,
-//     homeNewsScene,
-//     homeQuestionnaireScene,
-//     homeBasicsScene,
-//     homeReadMoreScene,
-//     homeReferenceScene,
-//     laptopScene,
-//     fontsScene,
-//     guidelinesBookScene,
-//     guidelinesElementsScene,
-//     layoutDescScene,
-//     chocoScene,
-//     viburnumScene,
-//     condimentScene,
-//     fruitScene,
-//     layout1Scene,
-//     layout2Scene,
-//     layout3Scene,
-//     layout4Scene,
-//     layout5Scene,
-//     layout6Scene,
-//     layout7Scene,
-//     layout8Scene,
-//     layout9Scene,
-//     layout10Scene,
-//     layout11Scene,
-//     layout12Scene,
-//     layout13Scene,
-//     layout14Scene,
-//     layout15Scene,
-//     layout16Scene,
-//     layout17Scene,
-//     layout18Scene,
-//     layout19Scene,
-//     endingScene,
-//     endingContentScene
-// ]);
-
 
 //RESET ANIMATIONS
 var resetBtn = document.querySelector('.ending__btn-icon');
@@ -585,7 +621,5 @@ let startScene = function() {
 }
 
 let resetTweens = function() {
-    // tweensArray.forEach(function(element) {
-        t1.time(0)
-    // })
+    t1.time(0)
 }
