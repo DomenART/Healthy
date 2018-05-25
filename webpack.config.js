@@ -28,17 +28,14 @@ module.exports = {
                     {
                         loader: 'file-loader',
                         options: {
-                            name: 'main.css',
+                            name: 'main.css'
                         }
                     },
                     {
                         loader: 'extract-loader',
                     },
                     {
-                        loader: "css-loader",
-                        options: {
-                            minimize: env === 'production' ? true : false
-                        }
+                        loader: "css-loader"
                     },
                     {
                         loader: 'postcss-loader'
@@ -68,7 +65,8 @@ module.exports = {
                     {
                         loader: 'file-loader',
                         options: {
-                           name: '[name].[ext]'
+                            name: '[name].[ext]',
+                            // useRelativePath: true
                         }
                     },
                     {
@@ -86,7 +84,8 @@ module.exports = {
                         loader: 'file-loader',
                         options: {
                             name: '[name].[ext]?[hash]',
-                            outputPath: 'img/'
+                            outputPath: 'img/',
+                            // useRelativePath: true
                         }
                     }
                 ]
